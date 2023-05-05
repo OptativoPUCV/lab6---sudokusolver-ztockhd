@@ -113,3 +113,14 @@ Fri 05 May 2023 06:48:57 PM UTC:
  tests:  3|3
 total_score: 25/70
 1ca10e4
+Fri 05 May 2023 07:29:38 PM UTC: 
+ sudoku.c | 32 ++++++++++++++++++++++++++------
+ 1 file changed, 26 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:53:9: error: unused variable ‘arregloS’ [-Werror=unused-variable]
+   53 |     int arregloS[10];
+      |         ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fb4458c

@@ -48,19 +48,39 @@ int is_valid(Node* n)
   
   for(int i = 0 ; i < 9 ; i++)
   {
-    int cont = 0;
+    int arregloF[10];
+    int arregloC[10];
+    int arregloS[10];
+    
     for(int j = 0 ; j < 9 ; j++)
     {
+      if(n->sudo[i][j] != 0)
+      {
+        if(arregloF[n->sudo[i][j]] == 1)
+        {
+          return 0;
+        }
+        else
+        {
+          arregloF[n->sudo[i][j]] = 1;
+        }
+      }
+
+      if(n->sudo[j][i] != 0)
+      {
+        if(arregloC[n->sudo[j][i]] == 1)
+        {
+          return 0;
+        }
+        else
+        {
+          arregloC[n->sudo[j][i]] = 1;
+        }
+      }
+      
       for(int k = 0 ; k < 9 ; k++)
       {
-        if(n->sudo[k][j] == n->sudo[i][j])
-        {
-          cont++;
-        }
-        if(cont > 1)
-        {
-          return 1;
-        }
+        
       }
     }
   }
