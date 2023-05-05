@@ -50,7 +50,7 @@ int is_valid(Node* n)
   {
     int arregloF[10];
     int arregloC[10];
-    int arregloS[10];
+    
     
     for(int j = 0 ; j < 9 ; j++)
     {
