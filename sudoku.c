@@ -50,6 +50,7 @@ int is_valid(Node* n)
   {
     Node* copia = copy(n);
     int cont = 0;
+    
     for(int j = 0 ; j < 9 ; j++)
     {
       for(int k = 0 ; k < 9 ; k++)
@@ -60,7 +61,7 @@ int is_valid(Node* n)
         }
         if(cont > 1)
         {
-          return 1;
+          return 0;
         }
       }
     }
