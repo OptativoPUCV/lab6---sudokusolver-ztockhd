@@ -48,14 +48,12 @@ int is_valid(Node* n)
   
   for(int i = 0 ; i < 9 ; i++)
   {
-    Node* copia = copy(n);
     int cont = 0;
-    
     for(int j = 0 ; j < 9 ; j++)
     {
       for(int k = 0 ; k < 9 ; k++)
       {
-        if(copia->sudo[k][j] == n->sudo[i][j])
+        if(n->sudo[k][j] == n->sudo[i][j])
         {
           cont++;
         }
