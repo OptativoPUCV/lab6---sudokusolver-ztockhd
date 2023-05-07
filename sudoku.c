@@ -78,7 +78,6 @@ int is_valid(Node* n)
         }
       }
       
-   
       int iS=3*(i/3) + (j/3) ;
       int jS=3*(i%3) + (j%3) ;
       
@@ -120,7 +119,7 @@ List* get_adj_nodes(Node* n)
           }
         }
       }
-      if(num == 1)
+      if(num == 1 && is_valid(copia) == 1)
       {
         pushBack(list, copia);
       }
