@@ -50,7 +50,7 @@ int is_valid(Node* n)
   {
     int arregloF[10] = {0};
     int arregloC[10] = {0};
-    
+    int arregloS[10] = {0};
     
     for(int j = 0 ; j < 9 ; j++)
     {
@@ -80,7 +80,20 @@ int is_valid(Node* n)
       
       for(int k = 0 ; k < 9 ; k++)
       {
+        int iS=3*(i/3) + (k/3) ;
+        int jS=3*(i%3) + (k%3) ;
         
+        if(n->sudo[iS][jS] != 0)
+        {
+          if(arreglosS[n->sudo[iS][jS]] == 1)
+          {
+            return 0;
+          }
+          else
+          {
+            arreglosS[n->sudo[iS][jS]] = 1;
+          }
+        }
       }
     }
   }
