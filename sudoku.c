@@ -176,7 +176,6 @@ Node* DFS(Node* initial, int* cont)
       datoLista = next(Lista);
     }
     
-    free(initial);
     free(auxDato);
   }
   
