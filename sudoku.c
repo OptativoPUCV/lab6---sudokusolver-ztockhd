@@ -156,7 +156,7 @@ Node* DFS(Node* initial, int* cont)
   Stack *pila = createStack();
   push(pila, initial);
   
-  while(is_empty(pila) != NULL)
+  while(is_empty(pila) == 0)
   {
     Node* auxDato = top(pila);
     pop(pila);

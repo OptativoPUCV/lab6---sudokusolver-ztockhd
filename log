@@ -212,3 +212,9 @@ sudoku.c:159:24: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 1277051
+Sun 07 May 2023 01:03:11 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|0
+total_score: 70/70
+fa741d7
