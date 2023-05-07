@@ -241,3 +241,9 @@ sudoku.c:179:8: error: ‘auxDato’ undeclared (first use in this function)
 sudoku.c:179:8: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 0389011
+Sun 07 May 2023 01:05:52 AM UTC: 
+ sudoku.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  10|0
+total_score: 70/70
+304d007
