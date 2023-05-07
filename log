@@ -201,3 +201,14 @@ Sun 07 May 2023 01:01:36 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 7eeb397
+Sun 07 May 2023 01:02:57 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:159:24: error: comparison between pointer and integer [-Werror]
+  159 |   while(is_empty(pila) != NULL)
+      |                        ^~
+cc1: all warnings being treated as errors
+Compilation failed
+1277051
