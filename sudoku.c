@@ -85,13 +85,13 @@ int is_valid(Node* n)
         
         if(n->sudo[iS][jS] != 0)
         {
-          if(arreglosS[n->sudo[iS][jS]] == 1)
+          if(arregloS[n->sudo[iS][jS]] == 1)
           {
             return 0;
           }
           else
           {
-            arreglosS[n->sudo[iS][jS]] = 1;
+            arregloS[n->sudo[iS][jS]] = 1;
           }
         }
       }
