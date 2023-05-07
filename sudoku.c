@@ -175,7 +175,7 @@ Node* DFS(Node* initial, int* cont)
       push(pila,datoLista);
       datoLista = next(Lista);
     }
-    
+    free(initial);
    
   }
   
