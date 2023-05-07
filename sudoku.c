@@ -78,23 +78,22 @@ int is_valid(Node* n)
         }
       }
       
-      for(int k = 0 ; k < 9 ; k++)
+   
+      int iS=3*(i/3) + (j/3) ;
+      int jS=3*(i%3) + (j%3) ;
+      
+      if(n->sudo[iS][jS] != 0)
       {
-        int iS=3*(j/3) + (k/3) ;
-        int jS=3*(j%3) + (k%3) ;
-        
-        if(n->sudo[iS][jS] != 0)
+        if(arregloS[n->sudo[iS][jS]] == 1)
         {
-          if(arregloS[n->sudo[iS][jS]] == 1)
-          {
-            return 0;
-          }
-          else
-          {
-            arregloS[n->sudo[iS][jS]] = 1;
-          }
+          return 0;
+        }
+        else
+        {
+          arregloS[n->sudo[iS][jS]] = 1;
         }
       }
+    
     }
   }
   return 1;
